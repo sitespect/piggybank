@@ -1,0 +1,6 @@
+framework module SiteSpectSDK {
+  umbrella header "SiteSpectSDK.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tU9-be-dZu">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Final View Controller-->
+        <scene sceneID="DUC-1N-Npq">
+            <objects>
+                <viewController id="tU9-be-dZu" customClass="FinalViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ALX-By-pwb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgAccountcreateCompleteIllustration" id="Qmd-uf-yqp">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="yKM-YB-6Zh">
+                                <rect key="frame" x="30" y="404" width="260" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DLR-Ab-rAN">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.14117647059999999" green="0.61568627450000002" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <state key="normal" title="ADD FUNDS">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pressedAddFunds:" destination="tU9-be-dZu" eventType="touchUpInside" id="CSL-ck-4Hp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="r5i-3f-G0H">
+                                        <rect key="frame" x="0.0" y="60" width="260" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <size key="titleShadowOffset" width="0.0" height="2.2250738585072014e-308"/>
+                                        <state key="normal" title="VIEW ACCOUNT">
+                                            <color key="titleColor" red="0.14117647059999999" green="0.61568627450000002" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                <size key="value" width="0.0" height="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" id="ot0-nw-ABE">
+                                <rect key="frame" x="35" y="215" width="255" height="156"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dwt-Zm-sWO">
+                                        <rect key="frame" x="0.0" y="36" width="255" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Well done, you've created your rainy day fund! Now is the time to place your dollars, nickels, and dimes in your Piggy Bank to make the most of your new account. What are you waiting for?</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All set!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AyQ-YE-mEY">
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <color key="textColor" red="0.14117647059999999" green="0.61568627450000002" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="addFundsButton" destination="DLR-Ab-rAN" id="eBA-zf-AHL"/>
+                        <outlet property="allSetLabel" destination="AyQ-YE-mEY" id="CN7-sC-0aS"/>
+                        <outlet property="buttonsContainerView" destination="yKM-YB-6Zh" id="nBT-zR-caF"/>
+                        <outlet property="mainImage" destination="Qmd-uf-yqp" id="dIh-SP-TE2"/>
+                        <outlet property="mainLabel" destination="dwt-Zm-sWO" id="OgG-Ed-UQF"/>
+                        <outlet property="textContainerView" destination="ot0-nw-ABE" id="haP-Oo-Cw9"/>
+                        <outlet property="viewAccountButton" destination="r5i-3f-G0H" id="h5o-Os-d4X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uAS-OI-PqY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="201" y="422"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imgAccountcreateCompleteIllustration" width="375" height="250"/>
+    </resources>
+</document>

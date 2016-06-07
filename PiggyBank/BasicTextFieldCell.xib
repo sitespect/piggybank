@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="47" id="JQN-Ek-wGa" customClass="BasicTextFieldCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JQN-Ek-wGa" id="x1M-ci-yFF">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Sp-AP-uBt">
+                        <rect key="frame" x="30" y="40" width="315" height="1"/>
+                        <color key="backgroundColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="STy-aH-bt3"/>
+                        </constraints>
+                    </view>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Pxf-kL-BQ7">
+                        <rect key="frame" x="30" y="0.0" width="315" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="yVG-2o-i7X"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Pxf-kL-BQ7" firstAttribute="leading" secondItem="x1M-ci-yFF" secondAttribute="leadingMargin" constant="22" id="8AQ-EY-rjR"/>
+                    <constraint firstItem="Pxf-kL-BQ7" firstAttribute="top" secondItem="x1M-ci-yFF" secondAttribute="topMargin" constant="-8" id="Gfi-Hl-WwS"/>
+                    <constraint firstItem="7Sp-AP-uBt" firstAttribute="top" secondItem="Pxf-kL-BQ7" secondAttribute="bottom" id="ehi-X4-JpP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Pxf-kL-BQ7" secondAttribute="trailing" constant="22" id="fQS-b9-zKu"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7Sp-AP-uBt" secondAttribute="trailing" constant="22" id="kgs-zA-HUs"/>
+                    <constraint firstItem="7Sp-AP-uBt" firstAttribute="leading" secondItem="x1M-ci-yFF" secondAttribute="leadingMargin" constant="22" id="oOT-J1-h3i"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="separatorView" destination="7Sp-AP-uBt" id="bHh-iP-Ibp"/>
+                <outlet property="textField" destination="Pxf-kL-BQ7" id="Z5c-mX-pM5"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
