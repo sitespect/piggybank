@@ -5,6 +5,8 @@ Sample iOS App used to demo the SiteSpect Mobile SDK
 This sample app includes a code change that works with a SiteSpect campaign. The following code block removes a form input on the registration screen in the application when a user is assigned to a campaign with the SDK identifier "no_occupation":
 
 ```objective-c
+  self.inputs = [NSMutableArray arrayWithObjects:@"First name", @"Middle name", @"Last name", @"Date of birth", @"Date Picker", @"Occupation", @"Email address", @"Password", @"Confirm password", nil];
+ 
   [SiteSpectSDK applyChangesForVariationGroupWithSDKIdentifier:@"no_occupation" baseline:nil changes:^{
     [self.inputs removeObjectAtIndex:5];
   }];
@@ -15,6 +17,8 @@ This sample app includes a code change that works with a SiteSpect campaign. The
 Mobile Live Variables allows manging specific variables inside SiteSpect that are used within the app. These dynamic variables are retrieved in the app using the "objectForLiveVariableWithKey" call and the values are defined (in JSON format) inside SiteSpect campaigns.  For example, this sample app defines all form input labels as live variables in the app with this code:
 
 ```objective-c
+   self.inputs = [NSMutableArray arrayWithObjects:@"First name", @"Middle name", @"Last name", @"Date of birth", @"Date Picker", @"Occupation", @"Email address", @"Password", @"Confirm password", nil];
+ 
     for (int i=0; i<[self.inputs count]; i++) {
         if ([SiteSpectSDK objectForLiveVariableWithKey:[self.inputs objectAtIndex:i]]) {
             [self.inputs setObject:[SiteSpectSDK objectForLiveVariableWithKey:[self.inputs objectAtIndex:i]] atIndexedSubscript:i];
