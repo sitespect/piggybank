@@ -1,2 +1,27 @@
 # PiggyBank
 Sample iOS App used to demo the SiteSpect Mobile SDK
+
+####Code Editor Example
+This sample app includes a code change that works with a SiteSpect campaign. The following code block removes a form input on the registration screen in the application when a user is assigned to a campaign with the SDK identifier "no_occupation":
+
+```objective-c
+  [SiteSpectSDK applyChangesForVariationGroupWithSDKIdentifier:@"no_occupation" baseline:nil changes:^{
+    [self.inputs removeObjectAtIndex:5];
+  }];
+```
+[See it Here](https://github.com/sitespect/piggybank/blob/master/PiggyBank/CreateAccountViewController.m#L59)
+
+####Live Variables
+Mobile Live Variables allows manging specific variables inside SiteSpect that are used within the app. These dynamic variables are retrieved in the app using the "objectForLiveVariableWithKey" call and the values are defined (in JSON format) inside SiteSpect campaigns.  For example, this sample app defines all form input labels as live variables in the app with this code:
+
+```objective-c
+    for (int i=0; i<[self.inputs count]; i++) {
+        if ([SiteSpectSDK objectForLiveVariableWithKey:[self.inputs objectAtIndex:i]]) {
+            [self.inputs setObject:[SiteSpectSDK objectForLiveVariableWithKey:[self.inputs objectAtIndex:i]] atIndexedSubscript:i];
+        }
+    }
+```
+[See it Here](https://github.com/sitespect/piggybank/blob/master/PiggyBank/CreateAccountViewController.m#L64)
+
+Passing `{"Occupation":"Job"}` within a SiteSpect campaign changes the form input label "Occupation" to "Job" for any user that is assigned to that campaign.
+
