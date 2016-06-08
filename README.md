@@ -1,6 +1,8 @@
 # PiggyBank
 Sample iOS App used to demo the SiteSpect Mobile SDK
 
+<img src="https://github.com/sitespect/piggybank/raw/master/PiggyBank.png" width="300">
+
 ####Code Editor Example
 This sample app includes a code change that works with a SiteSpect campaign. The following code block removes a form input on the registration screen in the application when a user is assigned to a campaign with the SDK identifier "no_occupation":
 
