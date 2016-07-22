@@ -16,7 +16,7 @@ This sample app includes a code change that works with a SiteSpect campaign. The
 [See it Here](https://github.com/sitespect/piggybank/blob/master/PiggyBank/CreateAccountViewController.m#L59)
 
 ####Live Variables
-Mobile Live Variables allows manging specific variables inside SiteSpect that are used within the app. These dynamic variables are retrieved in the app using the "objectForLiveVariableWithKey" call and the values are defined (in JSON format) inside SiteSpect campaigns.  For example, this sample app defines all form input labels as live variables in the app with this code:
+Mobile Live Variables allows managing specific variables inside SiteSpect that are used within the app. These dynamic variables are retrieved in the app using the "objectForLiveVariableWithKey" call and the values are defined (in JSON format) inside SiteSpect campaigns.  For example, this sample app defines all form input labels as live variables in the app with this code:
 
 ```objective-c
    self.inputs = [NSMutableArray arrayWithObjects:@"First name", @"Middle name", @"Last name", @"Date of birth", @"Date Picker", @"Occupation", @"Email address", @"Password", @"Confirm password", nil];
