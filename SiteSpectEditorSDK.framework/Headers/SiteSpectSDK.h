@@ -40,6 +40,24 @@ typedef NS_ENUM(NSUInteger, SSPCTLogLevel) {
 + (void)enableWithSiteID:(NSString *)siteID;
 
 /**
+ *  Set the site ID and optionally delay the session start.
+ *  Use [SiteSpectSDK startSession] to start the session
+ *  and attempt user assignment.
+ *  @param siteID Identifier of app registered with SiteSpect.
+ *  @param delayed Mark the session to be dalyed.
+ */
++ (void)enableWithSiteID:(NSString *)siteID withSessionDelay:(BOOL)delayed;
+
+/**
+ *  Set the site ID and enable the SDK and enable/disable Visual Editor
+ *  @param siteID Identifier of app registered with SiteSpect.
+ *  @param disabled
+ *          YES - Disable Visual Editor
+ *          NO  - Enable Visual Editor
+ */
++ (void)enableWithSiteID:(NSString *)siteID disableVisualEditor:(BOOL)disabled;
+
+/**
  *  Set the site ID for the SDK without enabling it.
  *  If the SDK is already enabled, this will log an error and do nothing.
  *  @param siteID Identifier of app registered with SiteSpect.
@@ -115,6 +133,11 @@ typedef NS_ENUM(NSUInteger, SSPCTLogLevel) {
  *                           delegate method.
  */
 + (void (^)(UIBackgroundFetchResult))sspctCompletionHandlerWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
+
+/**
+ *  Immediately starts the SiteSpect session and attempts user assignment.
+ */
++ (void)startSession;
 
 @end
 
