@@ -4,12 +4,12 @@ Sample iOS App used to demo the SiteSpect Mobile SDK
 <img src="https://github.com/sitespect/piggybank/raw/master/PiggyBank.png" width="300">
 
 ####Code Editor Example
-This sample app includes a code change that works with a SiteSpect campaign. The following code block removes a form input on the registration screen in the application when a user is assigned to a campaign with the SDK identifier "no_occupation":
+This sample app includes a code change that works with a SiteSpect campaign. The following code block removes a form input on the registration screen in the application when a user is assigned to a campaign with the SDK identifier "789" (SDK identifier is the ID of a variation group):
 
 ```objective-c
   self.inputs = [NSMutableArray arrayWithObjects:@"First name", @"Middle name", @"Last name", @"Date of birth", @"Date Picker", @"Occupation", @"Email address", @"Password", @"Confirm password", nil];
  
-  [SiteSpectSDK applyChangesForVariationGroupWithSDKIdentifier:@"no_occupation" baseline:nil changes:^{
+  [SiteSpectSDK applyChangesForVariationGroupWithSDKIdentifier:@"789" baseline:nil changes:^{
     [self.inputs removeObjectAtIndex:5];
   }];
 ```
