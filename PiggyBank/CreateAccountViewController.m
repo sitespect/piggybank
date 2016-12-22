@@ -56,7 +56,7 @@ BOOL custom = NO;
     self.inputs = [NSMutableArray arrayWithObjects:@"First name", @"Middle name", @"Last name", @"Date of birth", @"Date Picker", @"Occupation", @"Email address", @"Password", @"Confirm password", nil];
     
     // Code editing version setup
-    [SiteSpectSDK applyChangesForVariationGroupWithSDKIdentifier:@"no_occupation" baseline:nil changes:^{
+    [SiteSpectSDK applyChangesForVariationGroupWithSDKIdentifier:@"789" baseline:nil changes:^{
         [self.inputs removeObjectAtIndex:5];
     }];
 
